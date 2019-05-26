@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+#places-input {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit-button {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+}
