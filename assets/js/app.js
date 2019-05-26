@@ -1,6 +1,7 @@
 
-// empty array that will hold the restaurants
 
+// empty array that will hold the restaurants
+var finalLocation = document.getElementById("where-you-are-eating")
 var whereToEat = []
 
 // get value of form from submit button
@@ -21,3 +22,7 @@ function randomize() {
     var randomResponse = whereToEat[randomPlace];
     console.log(randomResponse)
 }
+
+
+
+
