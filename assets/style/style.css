@@ -2,6 +2,7 @@
 
 body {
     background-image: url("../images/backgroundImage.jpg");
+    background-size: cover;
     width: 100%;
     height: auto;
 }
@@ -47,7 +48,7 @@ h1 {
     font-size: 70px;
 }
 
-/* At 375 make picture smaller */
+
 @media screen and (max-width: 400px) {
     #main-image {
         width: 50%;
