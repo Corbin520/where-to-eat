@@ -1,28 +1,30 @@
 
 
-// empty array that will hold the restaurants
-var finalLocation = document.getElementById("where-you-are-eating")
+var finalLocation = document.getElementById("random-option");
 var whereToEat = []
 var randomResponse
 
-// get value of form from submit button
+
 $("#submit-button").on("click", function() {
-    // get the value
+    
     var userInput = $("#places-input").val().trim(); 
 
-    // split the user Input from a string to single restaurants
     whereToEat = whereToEat.concat(userInput.split(", "));
 
-    // call the function that returns the random restaurants
     randomize();
+
+    $("#places-input").hide();
+    $("#submit-button").hide();
+
+    $("#random-option").show();
+    $("#where-you-are-eating").show();
 })
 
 function randomize() {
 
     var randomPlace = Math.floor(Math.random() * whereToEat.length);
-     randomResponse = whereToEat[randomPlace];
-    console.log(randomResponse)
-    finalLocation.textContent = "Here is your random pick: " + randomResponse;
+    randomResponse = whereToEat[randomPlace];
+    finalLocation.textContent = randomResponse;
 }
 
 
