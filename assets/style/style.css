@@ -37,9 +37,12 @@ h1 {
     display: none;
     text-align: center;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 50px;
+    font-size: 60px;
+    text-decoration: underline;
 }
 
 #random-option {
     text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
 }
