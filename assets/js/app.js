@@ -3,6 +3,7 @@
 // empty array that will hold the restaurants
 var finalLocation = document.getElementById("where-you-are-eating")
 var whereToEat = []
+var randomResponse
 
 // get value of form from submit button
 $("#submit-button").on("click", function() {
@@ -19,9 +20,12 @@ $("#submit-button").on("click", function() {
 function randomize() {
 
     var randomPlace = Math.floor(Math.random() * whereToEat.length);
-    var randomResponse = whereToEat[randomPlace];
+     randomResponse = whereToEat[randomPlace];
     console.log(randomResponse)
+    finalLocation.textContent = "Here is your random pick: " + randomResponse;
 }
+
+
 
 
 
