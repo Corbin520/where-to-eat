@@ -4,6 +4,14 @@ var finalLocation = document.getElementById("random-option");
 var whereToEat = []
 var randomResponse
 
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 40.7608, lng: -111.8910},
+    zoom: 9
+  });
+}
+
 
 $("#submit-button").on("click", function() {
     
@@ -19,6 +27,9 @@ $("#submit-button").on("click", function() {
     $("#random-option").show();
     $("#where-you-are-eating").show();
 })
+
+// try below method.
+// on press
 
 // $("#places-input").on("keyup", function(event) {
 //     event.preventDefault()
@@ -42,6 +53,10 @@ function randomize() {
     randomResponse = whereToEat[randomPlace];
     finalLocation.textContent = randomResponse;
 }
+
+
+// bring in google maps so we can drop a pin where the locations are of the user guess
+
 
 
 
