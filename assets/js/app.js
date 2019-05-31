@@ -24,21 +24,21 @@ $("#submit-button").on("click", function() {
 // try below method. on press
 // on press
 
-$("#places-input").on("keypress", function(event) {
-        event.preventDefault()
+// $("#places-input").on("keypress", function(event) {
+    //     event.preventDefault()
     
-        var userInput = $("#places-input").val().trim(); 
+    //     var userInput = $("#places-input").val().trim(); 
     
-        whereToEat = whereToEat.concat(userInput.split(", "));
+    //     whereToEat = whereToEat.concat(userInput.split(", "));
     
-        randomize();
+    //     randomize();
     
-        $("#places-input").hide();
-        $("#submit-button").hide();
+    //     $("#places-input").hide();
+    //     $("#submit-button").hide();
     
-        $("#random-option").show();
-        $("#where-you-are-eating").show();
-    })
+    //     $("#random-option").show();
+    //     $("#where-you-are-eating").show();
+    // })
     
 
     // function that takes in our users input and gives back a random 
